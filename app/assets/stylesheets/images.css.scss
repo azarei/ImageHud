@@ -1,0 +1,304 @@
+// Place all the styles related to the images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+div
+{
+  transition: width 2s, height 2s, transform 2s, padding 1s, margin 1s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s, padding 1s, margin 1s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s, padding 1s, margin 1s;
+  -o-transition: width 2s, height 2s,-o-transform 2s, padding 1s, margin 1s;
+  color:white;
+}
+
+#levelControl{
+  width: 350px;
+  height: 40px;
+  margin-left:88%;
+  margin-top:20%;	
+  position:absolute;
+}
+
+#levelControl.hide{
+  margin-left:95%;
+}
+
+#fileInfo > .box_control{
+  margin-left:-55px;
+}
+
+#fileInfoId{
+  background-image:url('/assets/file_information_element.png');
+  width:40px;
+  height:40px;
+  border-style:solid;
+  border-width:1px;
+  margin-left:-40px;
+  background-color:black;
+}
+
+#fileInfo{
+    background-color:#162730;
+    width:400px;
+    height:auto;
+    margin-left:73%;
+    position:absolute;
+    margin-top:40%;
+    opacity:0.5;
+    font-size:18px;
+    padding-bottom:10px;
+}
+
+#fileInfo.hide{
+   margin-left:100%;
+}
+
+#mainImageInfo{
+  margin-left:25px;
+  margin-top:10px;
+  padding-right:10px;
+}
+
+#secondaryInfo{
+  margin-left:25px;
+  padding-right:10px;
+}
+
+.stage{
+  visibility:hidden;
+  height:1px;
+}
+
+#mainImage{
+  height:800px;
+  width:100%;
+}
+
+#purchaseOptions{
+  margin-top:200px;
+  height:100px;
+  width:100px;
+  position:absolute;
+}
+
+#fileSizes{
+  margin-top:300px;
+  position:absolute;
+  background-color:#162730;
+  padding:15px;
+  opacity:0.5;
+  height: 300px;
+  width:400px;
+}
+
+#fileSizes.hide{
+  height:100px;
+  width:50px;
+}
+
+
+#imageId{
+display:inline;
+}
+
+body{
+  overflow: hidden;
+background-color:transparent;
+background-attachment: fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size: 100%;
+}
+
+#purchaseCart{
+  background-position:center;
+  background-image:url('/assets/cart_inactive.png');
+  width:40px;
+  height:40px;
+  position:relative;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 85%;
+}
+
+#purchaseCart:hover{
+  background-image:url('/assets/cart_active.png');
+}
+
+#purchaseLightbox{
+  background-position:center;
+  background-image:url('/assets/lightbox_inactive.png');
+  width:40px;
+  height:40px;
+  position:relative;
+}
+
+#purchaseLightbox:hover{
+  background-image:url('/assets/lightbox_active.png');
+}
+
+#searchResults{
+  height:180px;
+  width:100%;
+  overflow:hidden;
+  margin-top:78%;
+  background-color:#162730;
+  position:absolute;
+  opacity:0.5;
+}
+
+#searchResults.hide{
+  margin-top:95%;
+}
+
+.navigation{
+width:100%;
+}
+
+.searchImage{
+width:120px;
+height:120px;
+background:#162730 !important;
+}
+
+.search_bar{
+  padding-left:10px;
+  padding-right:10px;
+  width:100%;
+  height:80px;
+  background-color:#162730;
+  position:absolute;
+  opacity:0.5;
+  background-image:url('/assets/getty_logo.png');
+  background-repeat:no-repeat;
+}
+
+
+#creativeSearch{
+  background-image:url('/assets/creative_filetype_active.png');
+  width:80px;
+  height:79px;
+  margin-top:-78px;
+  border-left: solid 1px white;
+  margin-left:auto;
+  margin-right:175px;
+}
+
+#editorialSearch{
+  background-image:url('/assets/editorial_filetype_inactive.png');
+  width:80px;
+  height:80px;
+  margin-top:-79px;
+  border-left: solid 1px white;
+  margin-left:auto;
+  margin-right:95px;
+}
+
+
+#fileInfo > .box_control{
+  #margin-left:-20px;
+}
+
+#videoSearch{
+  background-image:url('/assets/video_filetype_inactive.png');
+  width:80px;
+  height:80px;
+  margin-top:-79px;
+  border-left: solid 1px white;
+  margin-left:auto;
+  margin-right:15px;
+}
+
+
+#fileInfoHeader{
+  margin-top:-42px;
+  border-style:solid;
+  border-width:1px;
+  background-image:url('/assets/file_information_header.png');
+  width:480px;
+  height:40px;
+  position:relative;
+  background-repeat:no-repeat;
+  
+}
+
+#search_text{
+  height: 76px;
+  margin-left:300px;
+  margin-right:205px;
+  width:auto;
+  font-size:60px;
+  background-color:transparent;
+  color:white;
+  border:none;
+  background-image:url('/assets/search_icon_large.png');
+  background-repeat:no-repeat;
+  background-position: right;
+}
+
+form{
+  width:500px;
+}
+
+
+#logo{
+  background-image:url('/assets/getty_logo.png');
+  width:240px;
+  height:80px;
+  position: absoulute;
+}
+
+#layer1{
+   background-image:url('/assets/layer_one_active.png');
+   width:40px;
+   height:40px;
+   position:relative;
+   float:left;
+}
+
+#layer2{
+   background-image:url('/assets/layer_two_active.png');
+      width:40px;
+   height:40px;
+   position:relative;
+   position:relative;
+   float:left;
+}
+
+#layer3{
+   background-image:url('/assets/layer_three_active.png');
+   width:40px;
+   height:40px;
+   position:relative;
+   float:left;
+}
+
+#levelInfo{
+   background-image:url('/assets/info_icon_active.png');
+   width:40px;
+   height:40px;
+   position:relative;
+   float:left;
+   margin-left:15px;
+}
+
+
+.box_control{
+  margin-top:10px;
+  width:17px;
+  height:17px;
+  position:absolute;
+  background-image:url('/assets/tab_open.png');
+}
+
+div.hide > .box_control{
+  background-image:url('/assets/tab_closed.png');
+}
+
+
+
+#searchResults > .box_control{
+  #background-image:url('/assets/search_results_arrow_up.png');
+}

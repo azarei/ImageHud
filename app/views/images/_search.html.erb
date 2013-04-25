@@ -1,0 +1,27 @@
+
+  <div id="searchResults">
+		<div class="box_control"></div>
+      <p style="margin-left:80px; font-size:20px; margin-bottom:-29px; margin-top:1px;"><b>Your search results for </b>"<i><%= @searchText %></i>"</p>
+        <div id="mycarousel" class="connected-carousels" style="width:100%;">
+                <div class="stage">
+                    <div class="carousel carousel-stage">
+                        <ul>
+							<% @searchResults.each do |imageSearchResult| %>
+							  <li><img/></li>
+							<% end%>
+                        </ul>
+                    </div>
+        </div>
+				<div class="navigation">
+                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                    <a href="#" class="next next-navigation">&rsaquo;</a>
+                    <div class="carousel carousel-navigation searchImage">
+                        <ul class="searchImage">
+                          <% @searchResults.each do |imageSearchResult| %>
+                            <li><img src="<%= imageSearchResult['UrlThumb'] %>" id="<%= imageSearchResult['ImageId'] %>" class="searchImage"></li>
+                          <% end%>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+  </div>

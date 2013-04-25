@@ -1,0 +1,50 @@
+
+<div "mainContent">
+  <div class="search_bar">
+	  <%= form_tag do %>
+	    <%= text_field :search, :text %>
+	  <% end %>
+    <div id="creativeSearch"></div>
+    <div id="editorialSearch"></div>
+    <div id="videoSearch"></div>
+  </div>
+
+  <div id="levelControl" class="hide">
+	  <div class="box_control"></div>
+    <div id="levelInfo"></div>
+    <a id="level_1" href="#"><div id="layer1"></div></a>
+    <a id="level_2" href="#"><div id="layer2"></div></a>
+    <a id="level_3" href="#"><div id="layer3"></div></a>
+  </div>
+
+  <div id="purchaseOptions" class="hide">
+    <a href="<%= @imageData['GetImageDetailsResult']['Images'][0]['ReferralDestinations'][0]['Url'] %>"><div id="purchaseCart"></div></a>
+    <a href="<%= @imageData['GetImageDetailsResult']['Images'][0]['ReferralDestinations'][0]['Url'] %>"><div id="purchaseLightbox"></div></a>
+  </div>
+
+  <div id="fileInfo" class="hide">
+	  <div class="box_control"></div>
+    <div id="fileInfoId"></div>
+    <div id="fileInfoHeader"></div>
+	  <div id="mainImageInfo">
+	   <b><div id="imageTitle"><%= @imageData['GetImageDetailsResult']['Images'][0]['Title'] %></div></b>
+     <i><div id="imageArtist"><%= @imageData['GetImageDetailsResult']['Images'][0]['Artist'] %></div></i>
+     <b>Image# </b><span id="imageNumber"><%= @image_id %></span>
+    </div>
+    <br />
+    <div id="secondaryInfo">
+      <b>Caption: </b><span id="caption"></span>
+      <br />
+      <b>Collection: </b><span id="collection"></span>
+      <br />
+      <b>Copyright: </b><span id="copyright"></span>
+    </div>
+  </div>
+
+  <%= render 'search' %>
+
+</div>
+<% #@imageData %>
+<% #@searchText %>
+  
+<% #@searchResults %>
